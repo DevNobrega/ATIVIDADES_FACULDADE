@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body{
+    margin: 0px;
+}
+
+header {
+    background-color: #333333;
+    padding: 15px;
+    position: static;
+    align-content: space-between;
+}
+nav {
+    display: flex;
+    align-items: center;
+
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 0px 10px;
+    transition: font-size 0.3s ease-in-out;
+    ;
+
+}
+
+a:hover { 
+    font-size: 20px;
+    transition-duration: 0.3s;
+}
+
+form {
+    margin-left: outo;
+
+}
+input {
+    padding: 9px;
+    border-radius: 5px;
+}
+
+#botao {
+    background: purple;
+}
