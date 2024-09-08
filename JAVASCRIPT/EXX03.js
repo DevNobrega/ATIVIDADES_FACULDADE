@@ -2,7 +2,6 @@ let n1 = parseFloat(prompt('Informe o 1° número:'));
 let opcoes = prompt('Escolha a operação que deseja:\n 1 = Adição\n 2 = Subtração\n 3 = Multiplicação\n 4 = Divisão\n ');
 let n2 = parseFloat(prompt('Informe o 2° número:'));
 let resultado;
-
 if (opcoes == 1){
     resultado = n1+n2;
     alert(resultado);

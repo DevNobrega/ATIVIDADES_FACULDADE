@@ -1,5 +1,4 @@
 let numero = parseInt(prompt('Infome o número desejado:'));
-
 const interval = setInterval(() => {
     if (numero > 0){
         document.getElementById("countdown").innerHTML = numero;
