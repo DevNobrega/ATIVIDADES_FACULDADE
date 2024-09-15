@@ -31,3 +31,4 @@ if __name__ == "__main__":
     print("Nota 1:", aluno.get_nota01())
     print("Nota 2:", aluno.get_nota02())
     print("Media:", aluno.calcular_media())
+    
