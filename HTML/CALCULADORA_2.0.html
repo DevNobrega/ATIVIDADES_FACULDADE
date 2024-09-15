@@ -95,20 +95,21 @@
         </div>
     </div>
     <script>
+        //mostrar 2 numeros em sequencia!
         function insert(num) {
             var numero = document.getElementById('resultado').innerHTML;
             document.getElementById('resultado').innerHTML = numero + num;
         }
-
+        //faz apagar a tela e reiniciar as operações!
         function clean() {
             document.getElementById('resultado').innerHTML = "";
         }
-
+        //faz apagar um caractere individualmente com o "<"!
         function back() {
             var resultado = document.getElementById('resultado').innerHTML;
             document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length - 1);
         }
-
+        //faz os calculso de todas as operações!
         function calcular() {
             var resultado = document.getElementById('resultado').innerHTML;
             
@@ -121,7 +122,7 @@
                 }
             }
             try {
-                // Avalia a expressão 
+                // Avalia a expressão divisão e valida se a zero nas variaveis n1 e n2!
                 var evalResult = eval(resultado);
                 if (evalResult === Infinity || evalResult === -Infinity) {
                     document.getElementById('resultado').innerHTML = "0";
