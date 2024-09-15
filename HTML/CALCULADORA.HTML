@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+</head>
+<body>
+    <label for="n1">Primeiro número:</label><br />
+    <input id="n1" type="number" /><br />
+    <label for="n2">Segundo número:</label><br />
+    <input id="n2" type="number" /><br />
+    <button onclick="somar()">+</button>
+    <button onclick="subtracao()">-</button>
+    <button onclick="divisao()">/</button>
+    <button onclick="multiplicacao()">x</button>
+    <button onclick="apagar()">C</button>
+    <br /><br />
+    O resultado é: <span id="resultado"></span>
+
+    <script>
+        var n1 = document.querySelector('#n1');
+        var n2 = document.querySelector('#n2');
+        var resultado = document.querySelector('#resultado');
+
+        function somar() {
+            resultado.innerHTML = parseFloat(n1.value) + parseFloat(n2.value);
+        }
+
+        function subtracao() {
+            resultado.innerHTML = parseFloat(n1.value) - parseFloat(n2.value);
+        }
+
+        function divisao() {
+            var valor1 = parseFloat(n1.value);
+            var valor2 = parseFloat(n2.value);
+            if (valor2 === 0) {
+                resultado.innerHTML = 'Erro: Divisão por zero';
+            } else {
+                resultado.innerHTML = valor1 / valor2;
+            }
+        }
+
+        function multiplicacao() {
+            resultado.innerHTML = parseFloat(n1.value) * parseFloat(n2.value);
+        }
+
+        function apagar() {
+            n1.value = '';
+            n2.value = '';
+            resultado.innerHTML = '';
+        }
+    </script>
+</body>
+</html>
